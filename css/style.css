@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, "Segoe UI", system-ui;
 }
 body {
     display: flex;
     background-color: #fffbfb;
+    height: 110%;
+    margin-bottom: 500px;
 }
 #header {
     flex: 1 1 0;
@@ -24,7 +26,8 @@ nav {
 main {
     display: flex;
     flex: 3 1 0;
-    border: 1px solid #ddd;
+    height: 100%;
+    
 }
 footer {
     flex: 1.5 1 0;
@@ -45,11 +48,15 @@ ul li {
     display: flex;
     flex-direction: column;
     position: fixed;
+    border-right: 1px solid #ddd;
+    
 }
 #navbar-logo {
     width: 6rem;
     margin: 2rem 0;
+    cursor: pointer;
 }
+
 #navbar-logo img {
     width: 6rem;
     
@@ -128,6 +135,7 @@ li .fa-compass {
 }
 .story {
     margin: 0 auto;
+    cursor: pointer;
 }
 .story img {
     width: 4rem;
@@ -148,6 +156,8 @@ li .fa-compass {
 .post {
     height: 100%;
     width: 100%;
+    
+    padding-bottom: 4rem;
 }
 .header-post {
     display: flex;
@@ -163,10 +173,12 @@ li .fa-compass {
 .perfil-post img {
     width: 2rem;
     margin-right: 0.9rem;
+    cursor: pointer;
 }
 .perfil-post p {
     font-size: 0.78rem;
     font-weight: bold;
+    cursor: pointer;
 }
 .perfil-post .separator-point {
     margin: 0 0.3rem;
@@ -176,12 +188,18 @@ li .fa-compass {
 .perfil-post .minute-post {
     font-size: 0.80rem;
     color: #666;
+    cursor: pointer;
 }
 .header-post .menu-post {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #666;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.header-post .menu-post:hover {
+    color: #aaa;
 }
 .main-post {
     margin-top: 1rem;
@@ -196,6 +214,71 @@ li .fa-compass {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
+    cursor: pointer;
+}
+.links-post {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.links-post img {
+    width: 1.5rem;
+}
+.notificacoes-link img {
+    margin-right: 0.5rem;
+}
+.footer-post {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1px solid ;
+}
+.footer-post p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+.footer-post .space {
+    margin-top: 0.5rem;
+}
+.footer-post .space .gray {
+    margin-left: 0.2rem;
+    color: #aaa;
+    font-weight: 100;
+}
+.footer-post p a {
+    font-weight: bold;
+    margin-right: 0.3rem;
+}
+.footer-post span {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #444;
+}
+.footer-post .comentarios-footer-post {
+    font-size: 0.80rem;
+    font-weight: 100;
+    color: #888;
+}
+.footer-post .final-footer {
+    margin-top: 0.5rem;
+    font-size: 0.80rem;
+    font-weight: 100;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.final-footer span {
+    font-size: 1.3rem;
+    margin: auto 0;
+}
+.separator-post {
+    margin-top: 1rem;
+    width: 100%;
+    border: 0.5px solid #ddd;
 }
 /* footer */
 #info-post {
@@ -217,6 +300,7 @@ li .fa-compass {
 }
 .link-footer img {
     width: 2.7rem;
+    cursor: pointer;
 }
 .link-footer .link-flex {
     display: flex;
@@ -230,12 +314,19 @@ li .fa-compass {
     font-size: 0.70rem;
     color: #5864ff;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.link-footer span:hover {
+    color: #3b44c2;
 }
 .info-link-footer {
     margin-top: 0.5rem;
+    cursor: pointer;
 }
 .info-link-footer .gray {
     color: #666;
+    cursor: auto;
 }
 .sugestoes-link {
     margin-top: 2rem;
@@ -252,4 +343,24 @@ li .fa-compass {
     font-size: 0.8rem;
     font-weight: bold;
     color: #666;
+}
+.nav-footer ul {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    justify-content: left;
+}
+.nav-footer li a {
+    font-size: 0.7rem;
+    color: #ccc;
+}
+.nav-footer .separator-point-footer {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+.copy p {
+    margin-top: 1.2rem;
+    font-size: 0.75rem;
+    color: #ccc;
 }
